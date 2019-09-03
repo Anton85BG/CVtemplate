@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anton's CV2</title>
+    <title>Anton's CV</title>
     <script src="https://kit.fontawesome.com/9d2079c096.js"></script>
-    <link rel="stylesheet" href="cv3.css">
-    <link rel="stylesheet" href="cv3MediaQueries.css">
+    <link rel="stylesheet" href="cv4.css">
 </head>
 <body>
 
@@ -25,78 +24,112 @@
         </ul>
     </section>
     <img src="Anton.jpg" alt="Anton's profile picture">
-</header>  
+</header>
 
 <main>
-    <h2>Main Features:</h2>
+        <h2>Main Features:</h2>
         <button id="button1" class="main-aspects-button" onclick="myFunction1()"><h3>Personal Information</h3></button>
-            <section id="additional-content1">
-                <section class="additional-content-aside" id="additional-content-aside1">
-                    <h3>Name:</h3>
-                    <h3>Phone number:</h3>
-                    <h3>E-mail:</h3>
-                    <h3>Address:</h3>
-                </section>
-                <section class="additional-content-main" id="additional-content-main1">
-                    <h3><i>Anton Asenov</i></h3>
-                    <h3><i>0123456789</i></h3>
-                    <h3><i>anton@template.bg</i></h3>
-                    <h3><i>11str, Sofia, Bulgaria</i></h3>
-                </section>
+    <section id="additional-content1">
+        <section class="content">
+            <section class="content-aside">
+                <h3>Name:</h3>
             </section>
-                <script>
-                    function myFunction1() {
-                    var x = document.getElementById('additional-content1');
-                        if (x.style.display === 'flex') {
-                             x.style.display = 'none';
-                             document.getElementById("button1").style.background = "#666";
-                        } else {
-                            x.style.display = 'flex';
-                            document.getElementById("button1").style.background = "#333";
-                        }
-                    }       
-                </script>
+            <section class="content-main">
+                    <h3>Anton Asenov</h3>
+                </section>
+                <section class="content-aside">
+                <h3>E-mail:</h3>
+            </section>            
+            <section class="content-main">
+                    <h3>anton@cv.bg</h3>
+                </section>
+                <section class="content-aside">
+                <h3>Phone number:</h3>
+            </section>
+            <section class="content-main">
+                    <h3>123-456-7890</h3>
+                </section>
+                <section class="content-aside">
+                <h3>Address:</h3>
+            </section>
+            <section class="content-main">
+                    <h3>5, "Street", Sofia</h3>
+            </section>
+        </section>
+    </section>
+        <script>
+                function myFunction1() {
+                var x = document.getElementById('additional-content1');
+                    if (x.style.display === 'flex') {
+                         x.style.display = 'none';
+                         document.getElementById("button1").style.background = "#666";
+                    } else {
+                        x.style.display = 'flex';
+                        document.getElementById("button1").style.background = "#333";
+                    }
+                }       
+            </script>
 
-        <button id="button2" class="main-aspects-button" onclick="myFunction2()"><h3>Education</h3></button>
-            <section id="additional-content2">
-                <section class="additional-content-aside">
-                    <h3>1999 - 2004</h3>
-                    <h3>2004 - 2008</h3>
+<button id="button2" class="main-aspects-button" onclick="myFunction2()"><h3>Education</h3></button>
+<section id="additional-content2">
+        <section class="content">
+            <section class="content-aside">
+                <h3>1999 - 2004:</h3>
                 </section>
-                <section class="additional-content-main">
-                    <h3><i>"Yane Sandanski" High School, Sandanski</i></h3>
-                    <h3><i>Sofia University "St Kliment Ohridski" - Bachelor of Biotechnology</i></h3>
-                </section>
+                <section class="content-main">
+                        <h3><i>"Yane Sandanski" High School, Sandanski</i></h3>
+                    </section>
+                    <section class="content-aside">
+                <h3>2004 - 2008:</h3>
             </section>
-                <script>
-                    function myFunction2() {
-                    var x = document.getElementById('additional-content2');
-                        if (x.style.display === 'flex') {
-                             x.style.display = 'none';
-                             document.getElementById("button2").style.background = "#666";
-                        } else {
-                            x.style.display = 'flex';
-                            document.getElementById("button2").style.background = "#333";
-                        }
-                    }       
-                </script>
+            <section class="content-main">
+            <h3><i>Sofia University "St Kliment Ohridski" - Bachelor of Biotechnology</i></h3>
+        </section>
+        </section>
+    </section>
+    <script>
+            function myFunction2() {
+            var x = document.getElementById('additional-content2');
+                if (x.style.display === 'flex') {
+                     x.style.display = 'none';
+                     document.getElementById("button2").style.background = "#666";
+                } else {
+                    x.style.display = 'flex';
+                    document.getElementById("button2").style.background = "#333";
+                }
+            }       
+        </script>
 
         <button id="button3" class="main-aspects-button" onclick="myFunction3()"><h3>Previous Experience</h3></button>
-            <section id="additional-content3">
-                <section class="additional-content-aside">
-                    <h3>2009 - 2014</h3>
-                    <h3>2014 - 2015</h3>
-                    <h3>2015 - 2017</h3>
-                    <h3>2017 - 2018</h3>
-                </section>
-                <section class="additional-content-main">
-                    <h3><i>Bulgarian Pharmaceuticals Trading Company</i></h3>
+        <section id="additional-content3">
+                <section class="content">
+                    <section class="content-aside">
+                        <h3>2009 - 2014:</h3>
+                        </section>
+                        <section class="content-main">
+                                <h3><i>Bulgarian Pharmaceuticals Trading Company</i></h3>
+                            </section>
+                            <section class="content-aside">
+                        <h3>2014 - 2015:</h3>
+                    </section>
+                    <section class="content-main">
                     <h3><i>Remedium Drug Store</i></h3>
-                    <h3><i>Copywriter in a Bulgarian Food Supplements Company</i></h3>
-                    <h3><i>Web editor in <a href="https://www.puls.bg" target="_blank">Puls.bg</a> - a leading online healt portal</i></h3>
+                </section>
+                <section class="content-aside">
+                        <h3>2015 - 2017:</h3>
+                    </section>
+                    <section class="content-main">
+                    <h3><i>Copywriter in a bulgarian food supplements company</i></h3>
+                </section>
+                <section class="content-aside">
+                        <h3>2017 - 2018:</h3>
+                    </section>
+                    <section class="content-main">
+                    <h3><i>Web editor for <a href="https://www.puls.bg" target="_blank">Puls.bg</a>- a leading online health portal</i></h3>
+                </section>
                 </section>
             </section>
-                <script>
+            <script>
                     function myFunction3() {
                     var x = document.getElementById('additional-content3');
                         if (x.style.display === 'flex') {
@@ -111,39 +144,54 @@
 
         <button id="button4" class="main-aspects-button" onclick="myFunction4()"><h3>Additional courses</h3></button>
         <section id="additional-content4">
-            <section class="additional-content-aside-courses">
-                <h3>2014</h3>
-                <h3>2016</h3>
-                <h3>2018 - 2019</h3>
-                <h3>May2019-July2019</h3>
+                <section class="content">
+                    <section class="content-aside">
+                        <h3>2014:</h3>
+                        </section>
+                        <section class="content-main">
+                                <h3><i>3 months training practice for online content writing - <a href="https://www.spisanie.to/author/anton-asenov/" target="_blank">Spisanie.to</a></i></h3>
+                            </section>
+                            <section class="content-aside">
+                        <h3>2016:</h3>
+                    </section>
+                    <section class="content-main">
+                    <h3><i>3 months training practice for online content writing - <a href="https://uspelite.bg/antonb" target="_blank">Uspelite.bg</a></i></h3>
+                </section>
+                <section class="content-aside">
+                        <h3>2018-2019:</h3>
+                    </section>
+                    <section class="content-main">
+                    <h3><i>5 month Programmer\Programme supply course, organized by the Bulgarian-German Vocational Training Centre. I was introduced to:</i></h3>
+                        <ul>
+                            <li><p><i>The basics and best practices of web-developing (HTML, CSS, JavaScript)</i></p></li>
+                            <li><p><i>Optimizing the code for mobile phones and tablets (responsive design, media queries, flexbox, grid technology)</i></p></li>
+                            <li><p><i>Basic web design practices (Adobe Photoshop)</i></p></li>
+                        </ul>
+                </section>
+                <section class="content-aside">
+                        <h3>May2019 - July2019:</h3>
+                    </section>
+                    <section class="content-main">
+                    <h3><i>Programming basics with JavaScript (SoftUni, Sofia)</i></h3>
+                </section>
+                </section>
             </section>
-            <section class="additional-content-main-courses">
-                <h3><i>3 months training practice for online content writing - <a href="https://www.spisanie.to/author/anton-asenov/" target="_blank">Spisanie.to</a></i></h3>
-                <h3><i>3 months training practice for online content writing - <a href="https://uspelite.bg/antonb" target="_blank">Uspelite.bg</a></i></h3>
-                <h3><i>5 month Programmer/Programme supply course, organized by the Bulgarian-German Vocational Training Centre. I was introduced to:</i></h3>
-                    <ul>
-                        <li><p><i>The basics and best practices of web-developing (HTML, CSS, JavaScript)</i></p></li>
-                        <li><p><i>Optimizing the code for better performance on mobile phones and tablets (responsive web design, media queries, flex box, float, grid technology)</i></p></li>
-                        <li><p><i>Basic web design practices (Adobe Photoshop)</i></p></li>
-                    </ul>
-                <h3><i>Programming basics with JavaScript (SoftUni, Sofia)</i></h3>
-            </section>
-        </section>
             <script>
-                function myFunction4() {
-                var x = document.getElementById('additional-content4');
-                    if (x.style.display === 'flex') {
-                         x.style.display = 'none';
-                         document.getElementById("button4").style.background = "#666";
-                    } else {
-                        x.style.display = 'flex';
-                        document.getElementById("button4").style.background = "#333";
-                    }
-                }       
-            </script>
+                    function myFunction4() {
+                    var x = document.getElementById('additional-content4');
+                        if (x.style.display === 'flex') {
+                             x.style.display = 'none';
+                             document.getElementById("button4").style.background = "#666";
+                        } else {
+                            x.style.display = 'flex';
+                            document.getElementById("button4").style.background = "#333";
+                        }
+                    }       
+                </script>
 
         <button id="button5" class="main-aspects-button"><h3>Interests</h3></button>
-</main>
+
+    </main>
 
 <footer>
     <p>Created by: <a href="">Anton Asenov</a></p>
