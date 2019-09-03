@@ -100,6 +100,10 @@ footer p:last-child {
     float: right;
 }
 
+footer a {
+    color: #555;
+}
+
 #additional-content1, #additional-content2, #additional-content3, #additional-content4{
     border: 1px solid #788;
     width: 100%;
